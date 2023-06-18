@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6182A3E2282009C32F0 /* HomeViewController.swift */; };
+		18B8E6242A3E3A53009C32F0 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 18B8E6232A3E3A53009C32F0 /* Cosmos */; };
+		18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */; };
+		18B8E6292A3E5E2F009C32F0 /* TableViewCellForRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6272A3E5E2E009C32F0 /* TableViewCellForRow.swift */; };
+		18B8E62A2A3E5E2F009C32F0 /* TableViewCellForRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8E6282A3E5E2E009C32F0 /* TableViewCellForRow.xib */; };
 		18D5D4532A3A6B7400BDB42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5D4522A3A6B7400BDB42A /* AppDelegate.swift */; };
 		18D5D4552A3A6B7400BDB42A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5D4542A3A6B7400BDB42A /* SceneDelegate.swift */; };
-		18D5D4572A3A6B7400BDB42A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5D4562A3A6B7400BDB42A /* ViewController.swift */; };
 		18D5D45A2A3A6B7400BDB42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D5D4582A3A6B7400BDB42A /* Main.storyboard */; };
 		18D5D45D2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18D5D45B2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodeld */; };
 		18D5D45F2A3A6B8E00BDB42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D5D45E2A3A6B8E00BDB42A /* Assets.xcassets */; };
@@ -19,10 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18B8E6182A3E2282009C32F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForSection.swift; sourceTree = "<group>"; };
+		18B8E6272A3E5E2E009C32F0 /* TableViewCellForRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForRow.swift; sourceTree = "<group>"; };
+		18B8E6282A3E5E2E009C32F0 /* TableViewCellForRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellForRow.xib; sourceTree = "<group>"; };
 		18D5D44F2A3A6B7300BDB42A /* MarvelUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5D4522A3A6B7400BDB42A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D5D4542A3A6B7400BDB42A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18D5D4562A3A6B7400BDB42A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18D5D4592A3A6B7400BDB42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D5D45C2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarvelUniverse.xcdatamodel; sourceTree = "<group>"; };
 		18D5D45E2A3A6B8E00BDB42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B8E6242A3E3A53009C32F0 /* Cosmos in Frameworks */,
 				18D5D46E2A3A74BF00BDB42A /* Kingfisher in Frameworks */,
 				18D5D46B2A3A747900BDB42A /* Alamofire in Frameworks */,
 			);
@@ -43,6 +51,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B8E6152A3E14AD009C32F0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18D5D4582A3A6B7400BDB42A /* Main.storyboard */,
+				18D5D4602A3A6B8E00BDB42A /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18B8E6172A3E1792009C32F0 /* Presentation_layer */ = {
+			isa = PBXGroup;
+			children = (
+				18B8E61A2A3E2479009C32F0 /* Home_view */,
+			);
+			path = Presentation_layer;
+			sourceTree = "<group>";
+		};
+		18B8E61A2A3E2479009C32F0 /* Home_view */ = {
+			isa = PBXGroup;
+			children = (
+				18B8E6212A3E3833009C32F0 /* Cells */,
+				18B8E6182A3E2282009C32F0 /* HomeViewController.swift */,
+			);
+			path = Home_view;
+			sourceTree = "<group>";
+		};
+		18B8E6212A3E3833009C32F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */,
+				18B8E6272A3E5E2E009C32F0 /* TableViewCellForRow.swift */,
+				18B8E6282A3E5E2E009C32F0 /* TableViewCellForRow.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		18D5D4462A3A6B7300BDB42A = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +106,11 @@
 		18D5D4512A3A6B7300BDB42A /* MarvelUniverse */ = {
 			isa = PBXGroup;
 			children = (
+				18B8E6172A3E1792009C32F0 /* Presentation_layer */,
+				18B8E6152A3E14AD009C32F0 /* Base */,
 				18D5D4522A3A6B7400BDB42A /* AppDelegate.swift */,
 				18D5D4542A3A6B7400BDB42A /* SceneDelegate.swift */,
-				18D5D4562A3A6B7400BDB42A /* ViewController.swift */,
-				18D5D4582A3A6B7400BDB42A /* Main.storyboard */,
 				18D5D45E2A3A6B8E00BDB42A /* Assets.xcassets */,
-				18D5D4602A3A6B8E00BDB42A /* LaunchScreen.storyboard */,
 				18D5D4632A3A6B8E00BDB42A /* Info.plist */,
 				18D5D45B2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodeld */,
 			);
@@ -93,6 +136,7 @@
 			packageProductDependencies = (
 				18D5D46A2A3A747900BDB42A /* Alamofire */,
 				18D5D46D2A3A74BF00BDB42A /* Kingfisher */,
+				18B8E6232A3E3A53009C32F0 /* Cosmos */,
 			);
 			productName = MarvelUniverse;
 			productReference = 18D5D44F2A3A6B7300BDB42A /* MarvelUniverse.app */;
@@ -125,6 +169,7 @@
 			packageReferences = (
 				18D5D4692A3A747800BDB42A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				18D5D46C2A3A74BF00BDB42A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				18B8E6222A3E3A53009C32F0 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = 18D5D4502A3A6B7300BDB42A /* Products */;
 			projectDirPath = "";
@@ -142,6 +187,7 @@
 			files = (
 				18D5D4622A3A6B8E00BDB42A /* LaunchScreen.storyboard in Resources */,
 				18D5D45F2A3A6B8E00BDB42A /* Assets.xcassets in Resources */,
+				18B8E62A2A3E5E2F009C32F0 /* TableViewCellForRow.xib in Resources */,
 				18D5D45A2A3A6B7400BDB42A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,10 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D5D4572A3A6B7400BDB42A /* ViewController.swift in Sources */,
+				18B8E6292A3E5E2F009C32F0 /* TableViewCellForRow.swift in Sources */,
 				18D5D4532A3A6B7400BDB42A /* AppDelegate.swift in Sources */,
 				18D5D4552A3A6B7400BDB42A /* SceneDelegate.swift in Sources */,
 				18D5D45D2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodeld in Sources */,
+				18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */,
+				18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +422,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		18B8E6222A3E3A53009C32F0 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		18D5D4692A3A747800BDB42A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -393,6 +449,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		18B8E6232A3E3A53009C32F0 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B8E6222A3E3A53009C32F0 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
 		18D5D46A2A3A747900BDB42A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 18D5D4692A3A747800BDB42A /* XCRemoteSwiftPackageReference "Alamofire" */;
