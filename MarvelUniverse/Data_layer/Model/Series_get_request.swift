@@ -9,13 +9,13 @@ import Foundation
 
 
 struct SeriesRequest : Codable {
-    var code : String?
+    var code : Int?
     var status : String?
     var copyright : String?
     var attributionText : String?
     var attributionHTML : String?
     var etag : String?
-    var data : [AllSeries]?
+    var data : AllSeries?
     
 }
 
@@ -30,9 +30,9 @@ struct SeriesData : Codable{
     var id : Int?
     var title : String?
     var description : String?
-    var startYear : String?
-    var thumbnail : [SeriesImg]?
-    var creators : [CreatorsData]?
+    var startYear : Int?
+    var thumbnail : SeriesImg?
+    var creators : CreatorsData?
     
 }
 

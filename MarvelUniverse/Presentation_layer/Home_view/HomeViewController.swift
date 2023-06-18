@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
     
     var sections = [section]()
     
+    var fetchRes : [SeriesData] = []
+    let apiUrl : apiLinks = .allSeriesApi
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +38,15 @@ class HomeViewController: UIViewController {
     
         self.moviesTable.register(UINib(nibName: "TableViewCellForRow", bundle: nil), forCellReuseIdentifier: "TableViewCellForRow")
         
+        
+        NetworkManger.fetchData(apiLink: apiUrl.rawValue) { [weak self] (data: SeriesRequest?) in
+            DispatchQueue.main.async{
+                self!.fetchRes = data?.data?.results ?? []
+                self!.moviesTable.reloadData()
+                print (self!.fetchRes.count)
+            }
+            
+        }
         
         sections = [
             section(seriesName: "spider man", row: ["row1"]),

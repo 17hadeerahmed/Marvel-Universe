@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		188F9B192A3F4188008AC2A8 /* Network_services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9B182A3F4188008AC2A8 /* Network_services.swift */; };
+		188F9B1C2A3FC813008AC2A8 /* api_constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9B1B2A3FC812008AC2A8 /* api_constant.swift */; };
 		18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6182A3E2282009C32F0 /* HomeViewController.swift */; };
 		18B8E6242A3E3A53009C32F0 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 18B8E6232A3E3A53009C32F0 /* Cosmos */; };
 		18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		188F9B182A3F4188008AC2A8 /* Network_services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_services.swift; sourceTree = "<group>"; };
+		188F9B1B2A3FC812008AC2A8 /* api_constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_constant.swift; sourceTree = "<group>"; };
 		18B8E6182A3E2282009C32F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForSection.swift; sourceTree = "<group>"; };
 		18B8E6272A3E5E2E009C32F0 /* TableViewCellForRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForRow.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 				188F9B182A3F4188008AC2A8 /* Network_services.swift */,
 			);
 			path = Data_source;
+			sourceTree = "<group>";
+		};
+		188F9B1A2A3FC7B0008AC2A8 /* Application_layer */ = {
+			isa = PBXGroup;
+			children = (
+				188F9B1B2A3FC812008AC2A8 /* api_constant.swift */,
+			);
+			path = Application_layer;
 			sourceTree = "<group>";
 		};
 		18B8E6152A3E14AD009C32F0 /* Base */ = {
@@ -135,6 +145,7 @@
 		18D5D4512A3A6B7300BDB42A /* MarvelUniverse */ = {
 			isa = PBXGroup;
 			children = (
+				188F9B1A2A3FC7B0008AC2A8 /* Application_layer */,
 				18B8E62B2A3E8F50009C32F0 /* Data_layer */,
 				18B8E6172A3E1792009C32F0 /* Presentation_layer */,
 				18B8E6152A3E14AD009C32F0 /* Base */,
@@ -234,6 +245,7 @@
 				18D5D4532A3A6B7400BDB42A /* AppDelegate.swift in Sources */,
 				18D5D4552A3A6B7400BDB42A /* SceneDelegate.swift in Sources */,
 				18D5D45D2A3A6B7400BDB42A /* MarvelUniverse.xcdatamodeld in Sources */,
+				188F9B1C2A3FC813008AC2A8 /* api_constant.swift in Sources */,
 				18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */,
 				188F9B192A3F4188008AC2A8 /* Network_services.swift in Sources */,
 				18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */,
