@@ -16,7 +16,7 @@ protocol NetworkClientProtocol {
 class NetworkClient : NetworkClientProtocol {
     static func getAllSeries(complitionHandler: @escaping (SeriesRequest?) -> Void) {
         NetworkManger.fetchData(apiLink: apiUrl.rawValue) {(data: SeriesRequest?) in
-            complitionHandler(data)
+            complitionHandler(nil)
         }
     }
     

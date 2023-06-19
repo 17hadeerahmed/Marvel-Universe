@@ -11,7 +11,7 @@ import Foundation
 class Repositary : BaseRepositary {
     static func getAllSeries(complitionHandler: @escaping (SeriesRequest?) -> Void) {
         RemoteDataSource.getAllSeries { (data: SeriesRequest?) in
-            complitionHandler(data)
+            complitionHandler(nil)
         }
     }
     

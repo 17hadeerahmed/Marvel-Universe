@@ -15,7 +15,7 @@ protocol RemoteDataSourceProtocol {
 class RemoteDataSource : RemoteDataSourceProtocol {
     static func getAllSeries(complitionHandler: @escaping (SeriesRequest?) -> Void) {
         NetworkClient.getAllSeries { (data: SeriesRequest?) in
-            complitionHandler(data)
+            complitionHandler(nil)
         }
     }
     

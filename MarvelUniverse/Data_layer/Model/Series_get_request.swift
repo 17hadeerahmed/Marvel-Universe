@@ -33,6 +33,7 @@ struct SeriesData : Codable{
     var startYear : Int?
     var thumbnail : SeriesImg?
     var creators : CreatorsData?
+   
     
 }
 
