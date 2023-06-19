@@ -13,6 +13,7 @@
 		18B0C4422A40B3FD0014E07F /* Remote_data_source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C4412A40B3FD0014E07F /* Remote_data_source.swift */; };
 		18B0C4442A40B6870014E07F /* Base_Repositary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C4432A40B6870014E07F /* Base_Repositary.swift */; };
 		18B0C4472A40B75A0014E07F /* repositary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C4462A40B75A0014E07F /* repositary.swift */; };
+		18B0C4492A40B93E0014E07F /* AllSeries_usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C4482A40B93E0014E07F /* AllSeries_usecase.swift */; };
 		18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6182A3E2282009C32F0 /* HomeViewController.swift */; };
 		18B8E6242A3E3A53009C32F0 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 18B8E6232A3E3A53009C32F0 /* Cosmos */; };
 		18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */; };
@@ -36,6 +37,7 @@
 		18B0C4412A40B3FD0014E07F /* Remote_data_source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote_data_source.swift; sourceTree = "<group>"; };
 		18B0C4432A40B6870014E07F /* Base_Repositary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_Repositary.swift; sourceTree = "<group>"; };
 		18B0C4462A40B75A0014E07F /* repositary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repositary.swift; sourceTree = "<group>"; };
+		18B0C4482A40B93E0014E07F /* AllSeries_usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSeries_usecase.swift; sourceTree = "<group>"; };
 		18B8E6182A3E2282009C32F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18B8E6252A3E425C009C32F0 /* TableViewCellForSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForSection.swift; sourceTree = "<group>"; };
 		18B8E6272A3E5E2E009C32F0 /* TableViewCellForRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForRow.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		18B0C43E2A40A7BE0014E07F /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				18B0C4482A40B93E0014E07F /* AllSeries_usecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				18B8E6192A3E2282009C32F0 /* HomeViewController.swift in Sources */,
 				188F9B192A3F4188008AC2A8 /* Network_services.swift in Sources */,
 				18B8E6262A3E425C009C32F0 /* TableViewCellForSection.swift in Sources */,
+				18B0C4492A40B93E0014E07F /* AllSeries_usecase.swift in Sources */,
 				18B0C4402A40ADC70014E07F /* Network_client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
