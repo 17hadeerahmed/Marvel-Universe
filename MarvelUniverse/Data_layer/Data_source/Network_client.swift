@@ -7,6 +7,7 @@
 
 import Foundation
 
+let apiUrl : apiLinks = .allSeriesApi
 protocol NetworkClientProtocol {
     
    static func getAllSeries (complitionHandler : @escaping (SeriesRequest?) -> Void)
@@ -14,7 +15,7 @@ protocol NetworkClientProtocol {
 
 class NetworkClient : NetworkClientProtocol {
     static func getAllSeries(complitionHandler: @escaping (SeriesRequest?) -> Void) {
-        NetworkManger.fetchData(apiLink: apiLinks.allSeriesApi.rawValue) {(data: SeriesRequest?) in
+        NetworkManger.fetchData(apiLink: apiUrl.rawValue) {(data: SeriesRequest?) in
             complitionHandler(data)
         }
     }

@@ -118,6 +118,13 @@
 			path = Repositary;
 			sourceTree = "<group>";
 		};
+		18B0C44A2A40BB4B0014E07F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		18B8E6152A3E14AD009C32F0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,18 +137,19 @@
 		18B8E6172A3E1792009C32F0 /* Presentation_layer */ = {
 			isa = PBXGroup;
 			children = (
-				18B8E61A2A3E2479009C32F0 /* Home_view */,
+				18B0C44A2A40BB4B0014E07F /* ViewModel */,
+				18B8E61A2A3E2479009C32F0 /* View */,
 			);
 			path = Presentation_layer;
 			sourceTree = "<group>";
 		};
-		18B8E61A2A3E2479009C32F0 /* Home_view */ = {
+		18B8E61A2A3E2479009C32F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				18B8E6212A3E3833009C32F0 /* Cells */,
 				18B8E6182A3E2282009C32F0 /* HomeViewController.swift */,
 			);
-			path = Home_view;
+			path = View;
 			sourceTree = "<group>";
 		};
 		18B8E6212A3E3833009C32F0 /* Cells */ = {
