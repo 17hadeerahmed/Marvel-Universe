@@ -29,6 +29,8 @@ class HomeViewController: UIViewController {
                 }
             }
         viewModelObj.getSeries()
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font:  UIFont(name: "Georgia Bold ", size: 19) as Any ]
+        
     }
     func renderSeries() {
         self.moviesTable.reloadData()

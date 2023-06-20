@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--   -->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="MarvelUniverse" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,12 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5aK-Ni-ruq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5aK-Ni-ruq">
                                 <rect key="frame" x="0.0" y="153" width="393" height="699"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="1" green="0.23258557360152909" blue="0.19512251953828275" alpha="0.51558265938664116" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" systemColor="systemRedColor"/>
+                                <color key="separatorColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewCellForSection" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellForSection" rowHeight="208" id="13o-Su-Gq1" userLabel="Table View Section" customClass="TableViewCellForSection" customModule="MarvelUniverse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="208"/>
@@ -100,7 +101,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="gYK-je-6Qy" firstAttribute="trailing" secondItem="pW4-a6-XWI" secondAttribute="trailingMargin" id="596-cd-m5f"/>
                                                 <constraint firstItem="6P0-R8-V1f" firstAttribute="trailing" secondItem="pW4-a6-XWI" secondAttribute="trailingMargin" constant="20" id="Ay5-JG-W0K"/>
@@ -117,7 +118,7 @@
                                                 <constraint firstItem="zm5-mg-vvv" firstAttribute="leading" secondItem="pW4-a6-XWI" secondAttribute="leading" constant="20" id="uY5-yt-z9r"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.96706870379999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.60947171609999995" green="0.17990296217682822" blue="0.1189216568" alpha="0.52059350424254969" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="seriesImg" destination="zm5-mg-vvv" id="IMK-A8-mz9"/>
@@ -132,8 +133,8 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YK7-iU-oVa">
-                                <rect key="frame" x="-2" y="106" width="393" height="44"/>
-                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="103" width="393" height="47"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <barButtonItem width="66.666666666666657" id="F6K-D8-i6i">
                                         <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
@@ -143,7 +144,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -156,9 +157,11 @@
                             <constraint firstItem="5aK-Ni-ruq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="TRj-mZ-RjX"/>
                             <constraint firstItem="5aK-Ni-ruq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VKF-M2-zn3"/>
                             <constraint firstAttribute="bottom" secondItem="5aK-Ni-ruq" secondAttribute="bottom" id="cBf-pC-2cQ"/>
+                            <constraint firstItem="YK7-iU-oVa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tIJ-d0-RVT"/>
+                            <constraint firstItem="YK7-iU-oVa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yj7-nc-v74"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="   " id="DGg-Fu-1c8"/>
+                    <navigationItem key="navigationItem" title="Home" id="DGg-Fu-1c8"/>
                     <connections>
                         <outlet property="moviesTable" destination="5aK-Ni-ruq" id="dmc-Pi-Cv8"/>
                     </connections>
@@ -175,13 +178,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PZf-Hp-CLY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PZf-Hp-CLY">
                                 <rect key="frame" x="0.0" y="145" width="393" height="707"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.60947171609999995" green="0.17990296219999999" blue="0.1189216568" alpha="0.45106900449999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" systemColor="systemRedColor"/>
+                                <color key="separatorColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchedTableViewCell" rowHeight="221" id="Tjv-7l-QEn" customClass="searchedTableViewCell" customModule="MarvelUniverse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="221"/>
@@ -304,12 +308,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.60947171609999995" green="0.14175432869999999" blue="0.1189216568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemRedColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -326,9 +330,6 @@
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="tv" catalog="system" width="128" height="95"/>
-        <systemColor name="secondarySystemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

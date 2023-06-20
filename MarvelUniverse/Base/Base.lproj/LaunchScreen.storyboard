@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Pnv-z9-lJg">
-                                <rect key="frame" x="0.0" y="278" width="393" height="297"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="Psz-OB-0CH"/>
-                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aCe-og-oc9"/>
-                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="evl-Wr-ef4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pnv-z9-lJg" secondAttribute="bottom" constant="243" id="yil-y0-vfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pnv-z9-lJg" secondAttribute="bottom" id="7Ff-xZ-dRk"/>
+                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RAu-E4-13F"/>
+                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mT4-cp-VqY"/>
+                            <constraint firstItem="Pnv-z9-lJg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uYb-kb-JtS"/>
                         </constraints>
                     </view>
                 </viewController>

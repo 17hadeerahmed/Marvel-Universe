@@ -1,15 +1,6 @@
 {
   "colors" : [
     {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.005",
-          "green" : "0.092",
-          "red" : "1.000"
-        }
-      },
       "idiom" : "universal"
     },
     {
@@ -19,15 +10,6 @@
           "value" : "light"
         }
       ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.005",
-          "green" : "0.092",
-          "red" : "1.000"
-        }
-      },
       "idiom" : "universal"
     },
     {
@@ -38,26 +20,12 @@
         }
       ],
       "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "1.000",
-          "green" : "1.000",
-          "red" : "1.000"
-        }
+        "platform" : "universal",
+        "reference" : "systemRedColor"
       },
       "idiom" : "universal"
     },
     {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.005",
-          "green" : "0.092",
-          "red" : "1.000"
-        }
-      },
       "idiom" : "iphone"
     },
     {
@@ -67,15 +35,6 @@
           "value" : "light"
         }
       ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.005",
-          "green" : "0.092",
-          "red" : "1.000"
-        }
-      },
       "idiom" : "iphone"
     },
     {
@@ -86,13 +45,8 @@
         }
       ],
       "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "1.000",
-          "green" : "1.000",
-          "red" : "1.000"
-        }
+        "platform" : "ios",
+        "reference" : "systemRedColor"
       },
       "idiom" : "iphone"
     }
