@@ -21,7 +21,7 @@ class HomeViewModel {
         
         NetworkManger.fetchData(apiLink: apiLinks.allSeriesApi.rawValue) { (data: SeriesRequest?) in
             self.fetchSeriesRes = data?.data?.results ?? []
-            print(self.fetchSeriesRes.count)
+       
         }
     }
 }

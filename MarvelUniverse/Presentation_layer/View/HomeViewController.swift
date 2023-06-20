@@ -6,8 +6,8 @@
 //
 
 import UIKit
+import Kingfisher
 
-//////////
 class section {
     let seriesName : String
     let row : [String]
@@ -18,8 +18,6 @@ class section {
         self.isSelcted = isSelcted
     }
 }
-
-////////////
 
 class HomeViewController: UIViewController {
 
@@ -70,17 +68,28 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sectionCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellForSection", for: indexPath)as! TableViewCellForSection
         
-        
-        
         let rowCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellForRow", for: indexPath)as! TableViewCellForRow
+        
+        let path = viewModelObj.fetchSeriesRes[indexPath.section].thumbnail?.path ?? ""
+        let ext = viewModelObj.fetchSeriesRes[indexPath.section].thumbnail?.extension ?? ""
+        let seriesImgUrl = URL(string: path + "." + ext)
+        let processor = RoundCornerImageProcessor(cornerRadius: 15)
+       
         if indexPath.row == 0 {
             sectionCell.seriesName.text = viewModelObj.fetchSeriesRes[indexPath.section].title
+            sectionCell.seriesImg.kf.setImage(with: seriesImgUrl , options: [
+                .processor(processor),
+                .transition(.fade(2)),
+            ])
+            
+            sectionCell.seriesYear.text = "Start Year :" + String(describing: viewModelObj.fetchSeriesRes[indexPath.section].startYear ?? 2000)
             //return cell for section
             return sectionCell
         }
         else {
-      //      cell.seriesName.text = sections[indexPath.section].row[indexPath.row - 1]
-        
+            rowCell.seriesDescrp.text = viewModelObj.fetchSeriesRes[indexPath.section].description ?? "sorry this Series does not have a formal description "
+            
+            rowCell.seriesCreators.text = viewModelObj.fetchSeriesRes[indexPath.section].creators?.items?.first?.name ?? "sorry this series does not have a formal creators "
             return rowCell
         }
         

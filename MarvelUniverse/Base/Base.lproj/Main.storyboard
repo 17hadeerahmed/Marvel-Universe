@@ -38,22 +38,29 @@
                                                         <constraint firstAttribute="width" constant="180" id="um0-oJ-uDO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q86-CM-IoA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q86-CM-IoA">
                                                     <rect key="frame" x="210" y="20" width="163" height="85"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="85" id="QIU-XG-PCq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-R8-V1f">
-                                                    <rect key="frame" x="210" y="114" width="163" height="45"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-R8-V1f">
+                                                    <rect key="frame" x="210" y="114" width="183" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="eBO-FA-Vfe"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="start Year">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="18" name="Georgia-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYK-je-6Qy" customClass="CosmosView" customModule="Cosmos">
@@ -95,7 +102,7 @@
                                             <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                             <constraints>
                                                 <constraint firstItem="gYK-je-6Qy" firstAttribute="trailing" secondItem="pW4-a6-XWI" secondAttribute="trailingMargin" id="596-cd-m5f"/>
-                                                <constraint firstItem="6P0-R8-V1f" firstAttribute="trailing" secondItem="pW4-a6-XWI" secondAttribute="trailingMargin" id="Ay5-JG-W0K"/>
+                                                <constraint firstItem="6P0-R8-V1f" firstAttribute="trailing" secondItem="pW4-a6-XWI" secondAttribute="trailingMargin" constant="20" id="Ay5-JG-W0K"/>
                                                 <constraint firstItem="6P0-R8-V1f" firstAttribute="top" secondItem="q86-CM-IoA" secondAttribute="bottom" constant="9" id="IfB-4q-MfQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="zm5-mg-vvv" secondAttribute="bottom" constant="20" id="MAy-TK-MKW"/>
                                                 <constraint firstItem="6P0-R8-V1f" firstAttribute="leading" secondItem="zm5-mg-vvv" secondAttribute="trailing" constant="10" id="Sa2-aP-cwY"/>

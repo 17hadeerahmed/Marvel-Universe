@@ -14,6 +14,7 @@ class TableViewCellForRow: UITableViewCell {
         seriesDescrp.isEditable = false
     }
 
+    @IBOutlet weak var seriesCreators: UILabel!
     @IBOutlet weak var seriesDescrp: UITextView!
     override func layoutSubviews() {
         super.layoutSubviews()
