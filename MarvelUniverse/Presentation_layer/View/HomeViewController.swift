@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import CoreData
 
 class HomeViewController: UIViewController {
 
@@ -14,7 +15,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var moviesTable: UITableView!
     var viewModelObj : HomeViewModel = HomeViewModel()
     var isSelcted : [Bool] = Array(repeating: false, count: 20)
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +95,9 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         moviesTable.deselectRow(at: indexPath , animated: true)
+        var descrp = viewModelObj.fetchSeriesRes[indexPath.section].description ?? "sorry this Series does not have a formal description "
+        var creator = viewModelObj.fetchSeriesRes[indexPath.section].creators?.items?.first?.name ?? "sorry this series does not have a formal creators "
+        CoreDataManager.SaveToCoreData(descrip: descrp , creators: creator)
         
         if indexPath.row == 0 {
           isSelcted[indexPath.section] = !isSelcted[indexPath.section]
