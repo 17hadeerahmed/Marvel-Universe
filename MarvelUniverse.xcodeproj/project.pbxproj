@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1866598B2A414BE2002DFB58 /* Search_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866598A2A414BE0002DFB58 /* Search_viewModel.swift */; };
+		1866598D2A414D0B002DFB58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866598C2A414D0B002DFB58 /* SearchViewController.swift */; };
 		188F9B192A3F4188008AC2A8 /* Network_services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9B182A3F4188008AC2A8 /* Network_services.swift */; };
 		188F9B1C2A3FC813008AC2A8 /* api_constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9B1B2A3FC812008AC2A8 /* api_constant.swift */; };
 		18B0C4402A40ADC70014E07F /* Network_client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C43F2A40ADC60014E07F /* Network_client.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1866598A2A414BE0002DFB58 /* Search_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_viewModel.swift; sourceTree = "<group>"; };
+		1866598C2A414D0B002DFB58 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		188F9B182A3F4188008AC2A8 /* Network_services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_services.swift; sourceTree = "<group>"; };
 		188F9B1B2A3FC812008AC2A8 /* api_constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_constant.swift; sourceTree = "<group>"; };
 		18B0C43F2A40ADC60014E07F /* Network_client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_client.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				18B0C44B2A40BCFE0014E07F /* Home_viewModel.swift */,
+				1866598A2A414BE0002DFB58 /* Search_viewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				18B8E6212A3E3833009C32F0 /* Cells */,
 				18B8E6182A3E2282009C32F0 /* HomeViewController.swift */,
+				1866598C2A414D0B002DFB58 /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +306,8 @@
 			files = (
 				18B0C4442A40B6870014E07F /* Base_Repositary.swift in Sources */,
 				18B8E6292A3E5E2F009C32F0 /* TableViewCellForRow.swift in Sources */,
+				1866598B2A414BE2002DFB58 /* Search_viewModel.swift in Sources */,
+				1866598D2A414D0B002DFB58 /* SearchViewController.swift in Sources */,
 				18B8E62E2A3E9011009C32F0 /* Series_get_request.swift in Sources */,
 				18B0C44C2A40BCFE0014E07F /* Home_viewModel.swift in Sources */,
 				18B0C4472A40B75A0014E07F /* repositary.swift in Sources */,

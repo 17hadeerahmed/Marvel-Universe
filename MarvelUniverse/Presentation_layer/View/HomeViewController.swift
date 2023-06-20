@@ -8,17 +8,6 @@
 import UIKit
 import Kingfisher
 
-class section {
-    let seriesName : String
-    let row : [String]
-    var isSelcted : Bool = false
-    init( seriesName : String , row : [String] ,isSelcted : Bool = false) {
-        self.seriesName = seriesName
-        self.row = row
-        self.isSelcted = isSelcted
-    }
-}
-
 class HomeViewController: UIViewController {
 
     
@@ -46,6 +35,11 @@ class HomeViewController: UIViewController {
     }
     
    
+    @IBAction func searchBTN(_ sender: Any) {
+        let searchVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        self.navigationController?.pushViewController(searchVC, animated: true)
+
+    }
 }
 
 
