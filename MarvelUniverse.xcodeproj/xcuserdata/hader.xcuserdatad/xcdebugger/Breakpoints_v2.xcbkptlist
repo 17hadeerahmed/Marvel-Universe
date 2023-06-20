@@ -100,5 +100,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C771955E-5BA1-4475-8FEB-2B02A103A328"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MarvelUniverse/Presentation_layer/ViewModel/Search_viewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getSeries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C771955E-5BA1-4475-8FEB-2B02A103A328 - 668c4f44555f5f65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarvelUniverse.SearchViewModel.getSeries() -&gt; ()"
+                  moduleName = "MarvelUniverse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hader/Desktop/MarvelUniverse/MarvelUniverse/Presentation_layer/ViewModel/Search_viewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  uuid = "C771955E-5BA1-4475-8FEB-2B02A103A328 - 668c4f44555f5f65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarvelUniverse.SearchViewModel.getSeries() -&gt; ()"
+                  moduleName = "MarvelUniverse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hader/Desktop/MarvelUniverse/MarvelUniverse/Presentation_layer/ViewModel/Search_viewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  uuid = "C771955E-5BA1-4475-8FEB-2B02A103A328 - 78ac0ffcbd0c03e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MarvelUniverse.SeriesRequest&gt;) -&gt; () in MarvelUniverse.SearchViewModel.getSeries() -&gt; ()"
+                  moduleName = "MarvelUniverse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hader/Desktop/MarvelUniverse/MarvelUniverse/Presentation_layer/ViewModel/Search_viewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "417">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -27,9 +27,11 @@ class SearchViewModel {
     
     func getSeries(){
         
-        NetworkManger.fetchData(apiLink: apiLinks.allSeriesApi.rawValue) { (data: SeriesRequest?) in
+        NetworkManger.fetchData(apiLink: apiLinks.allSeriesApi.rawValue) { [self] (data: SeriesRequest?) in
             self.allSeries = data?.data?.results ?? []
             self.searchedSeries = data?.data?.results ?? []
+            print(self.allSeries.count)
+            print(self.searchedSeries.count)
         }
     }
 }

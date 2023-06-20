@@ -17,16 +17,17 @@ class SearchViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        seriesTable.delegate = self
+        seriesTable.dataSource = self
         navigationItem.searchController = searchController
         configureSearchController ()
-        viewModelObj.getSeries()
+       
         viewModelObj.bindResultToSearchView = {[weak self] in
             DispatchQueue.main.async{
                 self?.renderSearchedSeries()
             }
-            
         }
+        viewModelObj.getSeries()
     }
     func configureSearchController ()
     {
@@ -49,45 +50,6 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController : UITableViewDelegate , UITableViewDataSource ,UISearchBarDelegate , UISearchResultsUpdating {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    
-  
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let sectionCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellForSection", for: indexPath)as! TableViewCellForSection
-        if searching {
-            
-            let path = viewModelObj.searchedSeries[indexPath.section].thumbnail?.path ?? ""
-            let ext = viewModelObj.searchedSeries[indexPath.section].thumbnail?.extension ?? ""
-            let seriesImgUrl = URL(string: path + "." + ext)
-            let processor = RoundCornerImageProcessor(cornerRadius: 15)
-            
-            sectionCell.seriesName.text = viewModelObj.searchedSeries[indexPath.section].title
-            sectionCell.seriesImg.kf.setImage(with: seriesImgUrl , options: [
-                .processor(processor),
-                .transition(.fade(2)),
-            ])
-            sectionCell.seriesYear.text = "Start Year :" + String(describing: viewModelObj.searchedSeries[indexPath.section].startYear ?? 2000)
-            return sectionCell
-            
-        } else {
-            let path = viewModelObj.allSeries[indexPath.section].thumbnail?.path ?? ""
-            let ext = viewModelObj.allSeries[indexPath.section].thumbnail?.extension ?? ""
-            let seriesImgUrl = URL(string: path + "." + ext)
-            let processor = RoundCornerImageProcessor(cornerRadius: 15)
-            
-            sectionCell.seriesName.text = viewModelObj.allSeries[indexPath.section].title
-            sectionCell.seriesImg.kf.setImage(with: seriesImgUrl , options: [
-                .processor(processor),
-                .transition(.fade(2)),
-            ])
-            sectionCell.seriesYear.text = "Start Year :" + String(describing: viewModelObj.allSeries[indexPath.section].startYear ?? 2000)
-            return sectionCell
-            
-        }
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
         if searching {
             return viewModelObj.searchedSeries.count
         }
@@ -96,8 +58,48 @@ extension SearchViewController : UITableViewDelegate , UITableViewDataSource ,UI
             return viewModelObj.allSeries.count
             
         }
+    }
+    
+   
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
         
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let sectionCell = tableView.dequeueReusableCell(withIdentifier: "searchedTableViewCell", for: indexPath) as! searchedTableViewCell
+        if searching {
+            
+            let path = viewModelObj.searchedSeries[indexPath.row].thumbnail?.path ?? ""
+            let ext = viewModelObj.searchedSeries[indexPath.row].thumbnail?.extension ?? ""
+            let seriesImgUrl = URL(string: path + "." + ext)
+            let processor = RoundCornerImageProcessor(cornerRadius: 20)
+            
+            sectionCell.seriesName.text = viewModelObj.searchedSeries[indexPath.row].title
+            sectionCell.seriesImg.kf.setImage(with: seriesImgUrl , options: [
+                .processor(processor),
+                .transition(.fade(2)),
+            ])
+            sectionCell.seriesYear.text = "Start Year :" + String(describing: viewModelObj.searchedSeries[indexPath.row].startYear ?? 2000)
+            return sectionCell
+            
+        } else {
+            let path = viewModelObj.allSeries[indexPath.row].thumbnail?.path ?? ""
+            let ext = viewModelObj.allSeries[indexPath.row].thumbnail?.extension ?? ""
+            let seriesImgUrl = URL(string: path + "." + ext)
+            let processor = RoundCornerImageProcessor(cornerRadius: 15)
+            
+            sectionCell.seriesName.text = viewModelObj.allSeries[indexPath.row].title
+            sectionCell.seriesImg.kf.setImage(with: seriesImgUrl , options: [
+                .processor(processor),
+                .transition(.fade(2)),
+            ])
+            sectionCell.seriesYear.text = "Start Year:" + String(describing: viewModelObj.allSeries[indexPath.row].startYear ?? 2000)
+            return sectionCell
+            
+        }
+    }
+    
     
     func updateSearchResults(for searchController: UISearchController) {
         let searchText = searchController.searchBar.text!
@@ -128,6 +130,18 @@ extension SearchViewController : UITableViewDelegate , UITableViewDataSource ,UI
         searching = false
         viewModelObj.searchedSeries.removeAll()
         renderSearchedSeries()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        if let label = searchBar.value(forKey: "searchField") as? UITextField{
+            label.textColor = .white
+        }
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        if let label = searchBar.value(forKey: "searchField") as? UITextField{
+            label.textColor = .lightGray
+        }
     }
     
     
