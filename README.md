@@ -23,22 +23,14 @@ MVVM Design Pattern
 Clean Architecture
 
 # Screens 
+![Launch Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/642e460c-37e6-4dd9-af4a-48e04e9485f0)
 
-![launch screen](E:\1.png)
+![Home Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/8c19ce8f-b27a-49da-a4a7-0f6bb9aaebfb)
 
+![show Details](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/73afc82b-a605-41b3-a10d-3e241c85ebc1)
 
- ![Home screen](E:\2.png)
- 
- 
-![showw details screen](E:\png)
+![search](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/fe8f2c28-05f7-4deb-9373-f6bdf99bed3b)
 
+![filter series](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/7bd51610-4ff3-47a9-bdb7-bb9c60a90298)
 
-![search screen](E:\4.png)
-
-
-![filter screen](E:\5.png)
-
-
-![search resultscreen](E:\6.png)
-
-
+![search result](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/ff9a1a14-bff0-422e-898d-8a8ffe7a8e3f)
