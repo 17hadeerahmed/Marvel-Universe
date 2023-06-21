@@ -24,21 +24,21 @@ Clean Architecture
 
 # Screens 
 
-![launch screen](Desktop/1.png)
+![launch screen](E:\1.png)
 
 
- ![Home screen](Desktop/2.png)
+ ![Home screen](E:\2.png)
  
  
-![showw details screen](Desktop/3.png)
+![showw details screen](E:\png)
 
 
-![search screen](Desktop/4.png)
+![search screen](E:\4.png)
 
 
-![filter screen](Desktop/5.png)
+![filter screen](E:\5.png)
 
 
-![search resultscreen](Desktop/6.png)
+![search resultscreen](E:\6.png)
 
 
