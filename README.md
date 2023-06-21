@@ -23,7 +23,7 @@ MVVM Design Pattern
 Clean Architecture
 
 # Screens 
-![Launch Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/642e460c-37e6-4dd9-af4a-48e04e9485f0)
+![Launch Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/642e460c-37e6-4dd9-af4a-48e04e9485f0){ width= 200px}
 
 ![Home Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/8c19ce8f-b27a-49da-a4a7-0f6bb9aaebfb)
 
