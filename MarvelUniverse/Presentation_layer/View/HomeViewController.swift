@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var moviesTable: UITableView!
     var viewModelObj : HomeViewModel = HomeViewModel()
     var isSelcted : [Bool] = Array(repeating: false, count: 20)
+    var loadedCellCount = 15
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +66,12 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
         let sectionCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellForSection", for: indexPath)as! TableViewCellForSection
         
         let rowCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellForRow", for: indexPath)as! TableViewCellForRow
-        
+        guard indexPath.section < viewModelObj.fetchSeriesRes.count else {
+            return sectionCell
+        }
+        guard indexPath.row < viewModelObj.fetchSeriesRes.count else {
+            return sectionCell
+        }
         let path = viewModelObj.fetchSeriesRes[indexPath.section].thumbnail?.path ?? ""
         let ext = viewModelObj.fetchSeriesRes[indexPath.section].thumbnail?.extension ?? ""
         let seriesImgUrl = URL(string: path + "." + ext)
@@ -95,8 +101,8 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         moviesTable.deselectRow(at: indexPath , animated: true)
-        var descrp = viewModelObj.fetchSeriesRes[indexPath.section].description ?? "sorry this Series does not have a formal description "
-        var creator = viewModelObj.fetchSeriesRes[indexPath.section].creators?.items?.first?.name ?? "sorry this series does not have a formal creators "
+        let descrp = viewModelObj.fetchSeriesRes[indexPath.section].description ?? "sorry this Series does not have a formal description "
+        let creator = viewModelObj.fetchSeriesRes[indexPath.section].creators?.items?.first?.name ?? "sorry this series does not have a formal creators "
         CoreDataManager.SaveToCoreData(descrip: descrp , creators: creator)
         
         if indexPath.row == 0 {
@@ -105,6 +111,19 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
         }
         else {
             print(" taped cell for row")
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffsetY = scrollView.contentOffset.y
+        let maximumOffeset = scrollView.contentSize.height - scrollView.frame.size.height
+        
+        if (maximumOffeset - contentOffsetY <= 200 && loadedCellCount < viewModelObj.fetchSeriesRes.count){
+            
+            let sectionToLoaded = Int(ceil(Double(viewModelObj.fetchSeriesRes.count - loadedCellCount) / 15.0))
+            
+            loadedCellCount += sectionToLoaded * 15
+            renderSeries()
         }
     }
    
