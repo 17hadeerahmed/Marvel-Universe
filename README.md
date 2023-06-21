@@ -25,6 +25,7 @@ Clean Architecture
 # Screens 
 ![Launch Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/642e460c-37e6-4dd9-af4a-48e04e9485f0){ width= 200px}
 
+<img src="[image_path](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/642e460c-37e6-4dd9-af4a-48e04e9485f0)" alt="Alt Text" width="300" height="200">
 ![Home Screen](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/8c19ce8f-b27a-49da-a4a7-0f6bb9aaebfb)
 
 ![show Details](https://github.com/17hadeerahmed/Marvel-Universe/assets/44212089/73afc82b-a605-41b3-a10d-3e241c85ebc1)
