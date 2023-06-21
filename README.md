@@ -6,14 +6,20 @@ search results for user.
 
 # Featuers
 List of Movies
+
 Search 
+
 show series details 
 
 # Tools
 AlamoFire Pod
+
 KingFisher Pod
+
 Cosoms pod
+
 MVVM Design Pattern
+
 Clean Architecture
 
 # Screens 
